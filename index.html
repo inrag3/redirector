@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <title>Redirecting...</title>
     <script>
-        window.onload = function() {
-            var currentUrl = window.location.href;
-            console.log(currentUrl);
+        var currentUrl = window.location.href;
+        console.log(currentUrl);
 
-            var queryString = currentUrl.split('?');
-            if (queryString) {
-                window.location.replace(queryString[1] + '?' + queryString[2]);
-                setTimeout(function() {
-                    window.close();
-                }, 100);
-            }
+        var queryString = currentUrl.split('?');
+        if (queryString) {
+            window.location.replace(queryString[1] + '?' + queryString[2]);
+            setTimeout(function() {
+                window.close();
+            }, 100);
         }
     </script>
 </head>
